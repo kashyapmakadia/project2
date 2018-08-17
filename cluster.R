@@ -11,3 +11,4 @@ plot(marks,pch=14,col=c1$cluster)
 c1$centers
 points(c1$centers,col=1:3,pch=20,cex=3)
 
+c1$cluster
