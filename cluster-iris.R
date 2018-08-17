@@ -16,3 +16,7 @@ iriskm1$size
 iriskm1$cluster
 plot(irisFeatures$Sepal.Length,col=iriskm1$cluster)
 #sum of the distance within the cluster should be as less as possible
+
+points(irisFeatures$centers,col=1:3,pch=20,cex=10)
+library(NbClust)
+iris$tot.wthinss
