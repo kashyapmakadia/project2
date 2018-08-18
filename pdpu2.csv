@@ -1,0 +1,40 @@
+#Import from CSV
+
+df1=read.csv('pdpu.csv')
+df1
+head(df1)
+mean(df1$Marks1)
+
+aggregate(cbind(df$marks1,df$marks2),by=list(df$gender),FUN=mean)
+
+aggregate(cbind(marks1,marks2)~gender,data=df,FUN = mean)
+order(df$marks1)
+df[marks1<90,2:4]
+df[age<24,]
+df[marks1<90 & Course=='Btech',]
+class(age)
+median(df1$Marks2)
+df[marks1<90& Course=='Btech',1:6]
+aggregate(cbind(marks1,marks2)~gender,data=df1,FUN=mean)
+t1=table(df1$Marks2)
+table(df1$marks2)
+barplot(t2,t1,col = c('red','green'))
+pie(t1)
+t2=table(df1$Marks1)
+hist(t1,t2,col = c('blue','red','red','yellow'))
+pie(t2)
+
+write.csv(t1,'pdpu2.csv')mtcars
+mtcars
+(mtcars)
+df2=mtcars
+df3=rbind(df2,mtcars)
+nrow(mtcars)
+nrow(df3)
+(df3)
+dfcbind=(cbind(df2,df2))
+library(dplyr)
+df%>% group_by(gender)%>%summarise(avgsubject1=mean(marks1))
+course               
+gender               
+course
