@@ -38,8 +38,9 @@ itemFrequencyPlot(tdata,topN = 5,type="relative", horiz=T)
 rules = apriori(tdata, parameter = list(supp = 0.1, conf = 0.6, minlen=2))
 itemFrequencyPlot(items(rules))
 
+inspect(rules[1:5])
+inspect(head(rules))
 inspect(rules)
-
 #sort rules by support
 rules_s = sort(rules, by="support", decreasing=TRUE )
 inspect(rules_s)
@@ -73,8 +74,7 @@ is.redundant(rulesNR)
 sum(is.redundant(rulesNR))  #ok now
 inspect(rulesNR)
 
-#Rules with LHS and RHS: single or combination
-rules2= rulesNR
+#Rules with LHS and RHS: single or combinationrules2= rulesNR
 rules2.lhs1 <- subset(rules2, lhs %in% c("I1", "I5"))
 inspect(rules2.lhs1)
 
